@@ -6,6 +6,7 @@ function onReady(){
     $('#blue-btn').on('click',appendBlue)
     $('#green-btn').on('click',appendGreen)
     $('#yellow-btn').on('click',appendYellow)
+    $('#blocks').on('click','.block',sorryRed)
     $('#blocks').on('click','.block',sorryBlocks)
     
 }
@@ -39,6 +40,11 @@ function appendYellow(){
     yl++
     $('#yellow-count').append(yl)
 }
-// function sorryBlocks(){
-//     $(this).remove()
-// }
+function sorryRed(){
+    
+    $(this).remove()
+}
+function sorryBlocks(){
+    $(this).remove()
+
+}
